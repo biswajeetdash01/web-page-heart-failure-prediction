@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="apple-touch-icon" sizes="76x76" href="../static/img/apple-icon.png">
+    <title>
+        Heart Failure Prediction
+    </title>
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+    <link rel="stylesheet" href="../static/css/css.css">
+    <!-- CSS Files -->
+    <link id="pagestyle" href="../static/css/soft-ui-dashboard.css?v=1.0.3" rel="stylesheet" />
+    <script src="../static/js/js.js"></script>
+    <link rel="stylesheet" href="../static/css/footer.css">
+    <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="../static/css/styles.css">
+
+</head>
+
+<body class="g-sidenav-show  bg-gray-100">
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Heart Diseases Pridection System</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="/home" class="nav__link active-link">
+                            <i class='bx bx-home-alt nav__icon'></i>
+                            <span class="nav__name">Home</span>
+                        </a>
+                    </li>
+                    
+                    <li class="nav__item">
+                        <a href="/pre" class="nav__link">
+                            <i class='bx bx-user nav__icon'></i>
+                            <span class="nav__name">Heart Failure Predict</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="/req" class="nav__link">
+                            <i class='bx bx-book-alt nav__icon'></i>
+                            <span class="nav__name">Requirements</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="/about" class="nav__link">
+                            <i class='bx bx-briefcase-alt nav__icon'></i>
+                            <span class="nav__name">About</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="/feedback" class="nav__link">
+                            <i class='bx bx-message-square-detail nav__icon'></i>
+                            <span class="nav__name">Feedback</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- <img src="assets/img/perfil.png" alt="" class="nav__img"> -->
+        </nav>
+    </header>
+    <aside class="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl  fixed-start ms-3 " id="sidenav-main" style="height: 90%; margin-top: 80px;">
+        <div class="sidenav-header">
+            <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
+            <a class="navbar-brand m-0" href="#" target="_blank">
+                <span class="ms-1 font-weight-bold"><h6>Quotes</h6></span>
+            </a>
+        </div>
+        <hr class="horizontal dark mt-0">
+        <div class="collapse navbar-collapse  w-auto  max-height-vh-100 h-100" id="sidenav-collapse-main">
+            <p style="color: black;">“With a healthy heart, the beat goes on.”</p>
+            <p style="color: black;">“Let food be thy medicine, and medicine be thy food.” </p>
+            <p style="color: black;">“Start taking care of your heart before it falls apart.”</p>
+        </div>
+
+    </aside>
+    <main class="main-content position-relative max-height-vh-100 h-100 mt-1 border-radius-lg ">
+        <!-- Navbar -->
+        
+        <!-- End Navbar -->
+        <div class="container-fluid py-4" style="margin-top: 30px;">
+
+            <div class="row mt-4">
+
+                <div class="col-lg-12" >
+                    <div class="card h-100 p-3" >
+                        <div class="overflow-hidden position-relative border-radius-lg bg-cover h-150" style="background-image: linear-gradient(rgba(0, 0, 0, -1),rgba(0, 0, 0, 0.5)) ,url('../static/heart5.jpg'); background-position: 50%; ">
+                         
+                            <div class="card-body position-relative z-index-1 d-flex flex-column h-100 p-3" style="backdrop-filter: blur(2px);">
+                                <h5 class="text-black font-weight-bold font-weight-bolder mb-4 pt-2" style="font-size: 30px;background: linear-gradient(to left,
+                                violet,
+                                indigo,
+                                blue,
+                                green,
+                                yellow,
+                                orange,
+                                red);
+                        -webkit-background-clip: text;
+                        color: transparent;">Introduction</h5>
+                               <p style="text-align: justify;  text-shadow: 1px 2px 2px black, 0 0 1em rgb(35, 35, 65), 0 0 0.2em blue; font-weight: bold;">
+                                Among various life-threatening diseases, heart disease has garnered a great deal of attention in medical research. The diagnosis of heart disease is a challenging task, which can offer automated prediction about the heart condition of patient so that further treatment can be made effective. The diagnosis of heart disease is usually based on signs, symptoms and physical examination of the patient. There are several factors that increase the risk of heart disease, such as smoking habit, body cholesterol level, family history of heart disease, obesity, high blood pressure, and lack of physical exercise.
+                               </p>
+                               <p style="text-align: justify;  text-shadow: 1px 2px 2px black, 0 0 1em rgb(35, 35, 65), 0 0 0.2em blue; font-weight: bold;">
+                                A major challenge faced by health care organizations, such as hospitals and medical centers, is the provision of quality services at affordable costs.1 The quality service implies diagnosing patients properly and administering effective treatments. The available heart disease database consists of both numerical and categorical data. Before further processing, cleaning and filtering are applied on these records in order to filter the irrelevant data from the database
+                               </p>
+                               <p style="text-align: justify;  text-shadow: 1px 2px 2px black, 0 0 1em rgb(35, 35, 65), 0 0 0.2em blue; font-weight: bold;">
+                                The proposed system can determine an exact hidden knowledge, ie, patterns and relationships associated with heart disease from a historical heart disease database. It can also answer the complex queries for diagnosing heart disease; therefore, it can be helpful to health care practitioners to make intelligent clinical decisions. Results showed that the proposed system has its unique potency in realizing the objectives of the defined mining goals.
+                            
+                            </p>
+
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+
+            </div>
+
+        </div>
+       <!-- Footer -->
+<footer class="text-center " style="
+border-radius: 29px; background-color:gainsboro;">
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="color: black;font-weight: bold;">
+      © 2022 Copyright:
+      </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
+        
+    </main>
+    
+
+    <!--   Core JS Files   -->
+    <script src="../static/js/core/popper.min.js"></script>
+    <script src="../static/js/core/bootstrap.min.js"></script>
+    <script src="../static/js/plugins/perfect-scrollbar.min.js"></script>
+    <script src="../static/js/plugins/smooth-scrollbar.min.js"></script>
+    <script src="../static/js/api.js"></script>
+    <script>
+        var win = navigator.platform.indexOf('Win') > -1;
+        if (win && document.querySelector('#sidenav-scrollbar')) {
+            var options = {
+                damping: '0.5'
+            }
+            Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
+        }
+    </script>
+    <!-- Github buttons -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
+    <script src="../static/js/soft-ui-dashboard.min.js?v=1.0.3"></script>
+    <!-- Plotly CDN -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="../static/js/main.js"></script>
+
+
+    </body>
+    </html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="apple-touch-icon" sizes="76x76" href="../static/img/apple-icon.png">
+    <title>
+        Heart Failure Prediction
+    </title>
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+    <link rel="stylesheet" href="../static/css/css.css">
+    <!-- CSS Files -->
+    <link id="pagestyle" href="../static/css/soft-ui-dashboard.css?v=1.0.3" rel="stylesheet" />
+    <script src="../static/js/js.js"></script>
+    <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="../static/css/styles.css">
+
+</head>
+
+<body class="g-sidenav-show  bg-gray-100">
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Heart Diseases Pridection System</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="/home" class="nav__link active-link">
+                            <i class='bx bx-home-alt nav__icon'></i>
+                            <span class="nav__name">Home</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="/pre" class="nav__link">
+                            <i class='bx bx-user nav__icon'></i>
+                            <span class="nav__name">Heart Failure Predict</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="/req" class="nav__link">
+                            <i class='bx bx-book-alt nav__icon'></i>
+                            <span class="nav__name">Requirements</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="/about" class="nav__link">
+                            <i class='bx bx-briefcase-alt nav__icon'></i>
+                            <span class="nav__name">About</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="/feedback" class="nav__link">
+                            <i class='bx bx-message-square-detail nav__icon'></i>
+                            <span class="nav__name">Feedback</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- <img src="assets/img/perfil.png" alt="" class="nav__img"> -->
+        </nav>
+    </header>
+    <aside class="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl  fixed-start ms-3 "
+        id="sidenav-main" style="height: 90%; margin-top: 80px;">
+        <div class="sidenav-header">
+            <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none"
+                aria-hidden="true" id="iconSidenav"></i>
+            <a class="navbar-brand m-0" href="#" target="_blank">
+                <span class="ms-1 font-weight-bold">
+                    <h6>Instructions</h6>
+                </span>
+            </a>
+        </div>
+        <hr class="horizontal dark mt-0">
+        <div class="collapse navbar-collapse  w-auto  max-height-vh-100 h-100" id="sidenav-collapse-main">
+            <p style="color: black;">For run this web application please follow the Instructions</p>
+        </div>
+
+    </aside>
+    <main class="main-content position-relative max-height-vh-100 h-100 mt-1 border-radius-lg ">
+        <!-- Navbar -->
+
+        <!-- End Navbar -->
+        <div class="container-fluid py-4" style="margin-top: 30px;">
+
+            <div class="row mt-4">
+
+                <div class="col-lg-12">
+                    <div class="card h-100 p-3">
+                        <div class="overflow-hidden position-relative border-radius-lg bg-cover h-150"
+                            style="background-image: linear-gradient(rgba(0, 0, 0, -1),rgba(0, 0, 0, 0.5)) ,url('../static/heart5.jpg'); background-position: 50%; ">
+
+                            <div class="card-body position-relative z-index-1 d-flex flex-column h-100 p-3"
+                                style="backdrop-filter: blur(2px);">
+                                <h5 class="text-black font-weight-bold font-weight-bolder mb-4 pt-2" style="font-size: 30px;background: linear-gradient(to left,
+                                violet,
+                                indigo,
+                                blue,
+                                green,
+                                yellow,
+                                orange,
+                                red);
+                        -webkit-background-clip: text;
+                        color: transparent;">Requirements</h5>
+                                <p
+                                    style="text-align: justify;  text-shadow: 1px 2px 2px #000000, 0 0 1em rgb(35, 35, 65), 0 0 0.2em blue; font-weight: bold;">
+                                    To run this flask machine learning model.
+                                </p>
+                                <p
+                                    style="text-align: justify;  text-shadow: 1px 2px 2px #000000, 0 0 1em rgb(35, 35, 65), 0 0 0.2em blue; font-weight: bold;">
+                                    1. Install Python
+                                </p>
+                                <p
+                                    style="text-align: justify;  text-shadow: 1px 2px 2px #000000, 0 0 1em rgb(35, 35, 65), 0 0 0.2em blue; font-weight: bold;">
+                                    2. Install some libraries:
+                                </p>
+                                <p
+                                    style="text-align: justify;  text-shadow: 1px 2px 2px #000000, 0 0 1em rgb(35, 35, 65), 0 0 0.2em blue; font-weight: bold;">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;pip install catboost==1.0.3 <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;pip install certifi==2021.10.8 <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;pip install click==8.0.3 <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;pip install cycler==0.11.0 <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;pip install Flask==2.0.2 <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;pip install fonttools==4.28.5 <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;pip install graphviz==0.19.1 <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;pip install gunicorn==20.1.0 <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;pip install itsdangerous==2.0.1 <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;pip install Jinja2==3.0.3 <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;pip install joblib==1.1.0 <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;pip install kiwisolver==1.3.2 <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;pip install MarkupSafe==2.0.1 <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;pip install matplotlib==3.5.1 <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;pip install numpy==1.22.1 <br>
+
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid py-4" style="margin-top: -46px;">
+
+            <div class="row mt-4">
+
+                <div class="col-lg-12">
+                    <div class="card h-100 p-3">
+                        <div class="overflow-hidden position-relative border-radius-lg bg-cover h-150"
+                            style="background-image: linear-gradient(rgba(0, 0, 0, -1),rgba(0, 0, 0, 0.5)) ,url('../static/heart5.jpg'); background-position: 50%; ">
+
+                            <div class="card-body position-relative z-index-1 d-flex flex-column h-100 p-3"
+                                style="backdrop-filter: blur(2px);">
+                                <p
+                                    style="text-align: justify;  text-shadow: 1px 2px 2px #000000, 0 0 1em rgb(35, 35, 65), 0 0 0.2em blue; font-weight: bold;">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;pip install packaging==21.3 <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;pip install pandas==1.3.0 <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;pip install Pillow==9.0.0 <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;pip install plotly==5.5.0 <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;pip install pyparsing==3.0.6 <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;pip install python-dateutil==2.8.2 <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;pip install pytz==2021.3 <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;pip install scikit-learn==1.0.2 <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;pip install scipy==1.7.3 <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;pip install seaborn==0.11.2 <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;pip install six==1.16.0 <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;pip install tenacity==8.0.1 <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;pip install threadpoolctl==3.0.0 <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;pip install Werkzeug==2.0.2 <br></p>
+                                    <p
+                                    style="text-align: justify;  text-shadow: 1px 2px 2px #000000, 0 0 1em rgb(35, 35, 65), 0 0 0.2em blue; font-weight: bold;">3. Run file 'app.py' , Its redirect you to our flask web app.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+           <!-- Footer -->
+           <footer class="text-center " style="
+           border-radius: 29px; background-color:gainsboro; margin-top: 40px;">
+             
+               <!-- Copyright -->
+               <div class="text-center p-3" style="color: black;font-weight: bold;">
+                 © 2022 Copyright:
+                 </div>
+               <!-- Copyright -->
+             
+             </footer>
+           
+    </main>
+
+
+</body>
+
+</html>

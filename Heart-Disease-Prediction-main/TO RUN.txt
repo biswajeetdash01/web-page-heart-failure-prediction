@@ -1,0 +1,1 @@
+# To run D:\Heart-Disease-Prediction-main\flaskapp> python -m flask run
